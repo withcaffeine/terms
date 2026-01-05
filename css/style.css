@@ -1,0 +1,377 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard Variable", Pretendard, Roboto, "Noto Sans KR", "Segoe UI", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 2px solid #e9ecef;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #212529;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.1em;
+    color: #6c757d;
+    margin-top: 10px;
+}
+
+.effective-date {
+    font-size: 0.95em;
+    color: #6c757d;
+    margin-top: 10px;
+}
+
+/* Breadcrumb Navigation */
+.breadcrumb {
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.breadcrumb a {
+    color: #495057;
+    text-decoration: none;
+    font-size: 0.95em;
+    transition: color 0.2s;
+}
+
+.breadcrumb a:hover {
+    color: #007bff;
+}
+
+/* Terms Grid (Index Page) */
+.terms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin: 40px 0;
+}
+
+.term-card {
+    display: block;
+    background: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 12px;
+    padding: 32px 24px;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.term-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-color: #007bff;
+}
+
+.term-icon {
+    font-size: 2.5em;
+    margin-bottom: 16px;
+}
+
+.term-card h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #212529;
+    margin-bottom: 12px;
+}
+
+.term-card p {
+    color: #6c757d;
+    font-size: 0.95em;
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+
+.read-more {
+    color: #007bff;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+/* Terms Content (Detail Pages) */
+.terms-content {
+    padding: 20px 0;
+}
+
+.terms-content section {
+    margin-bottom: 40px;
+}
+
+.terms-content h2 {
+    font-size: 1.6em;
+    font-weight: 600;
+    color: #212529;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e9ecef;
+}
+
+.terms-content h3 {
+    font-size: 1.25em;
+    font-weight: 600;
+    color: #495057;
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+.terms-content p {
+    margin-bottom: 16px;
+    line-height: 1.7;
+}
+
+.terms-content ol,
+.terms-content ul {
+    margin-left: 20px;
+    margin-bottom: 16px;
+}
+
+.terms-content ol {
+    list-style-type: decimal;
+}
+
+.terms-content ul {
+    list-style-type: disc;
+}
+
+.terms-content li {
+    margin-bottom: 12px;
+    line-height: 1.7;
+}
+
+.terms-content li ul,
+.terms-content li ol {
+    margin-top: 8px;
+}
+
+.terms-content a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.terms-content a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Info Box */
+.info-box {
+    background-color: #f8f9fa;
+    border-left: 4px solid #007bff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+
+.info-box p {
+    margin-bottom: 8px;
+}
+
+.info-box p:last-child {
+    margin-bottom: 0;
+}
+
+.info-box strong {
+    color: #212529;
+    font-weight: 600;
+}
+
+.info-box ul {
+    margin-left: 20px;
+    margin-top: 8px;
+}
+
+/* Intro Text */
+.intro-text {
+    background-color: #e7f3ff;
+    border-left: 4px solid #007bff;
+    padding: 16px 20px;
+    margin-bottom: 32px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+/* Note */
+.note {
+    color: #6c757d;
+    font-size: 0.9em;
+    font-style: italic;
+    margin-top: 8px;
+}
+
+/* Consent Section */
+.consent-section {
+    margin-top: 40px;
+}
+
+.consent-box {
+    background-color: #f8f9fa;
+    border: 2px solid #dee2e6;
+    border-radius: 8px;
+    padding: 32px;
+    margin-top: 24px;
+}
+
+.consent-box h3 {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #212529;
+    margin-bottom: 16px;
+}
+
+.checkbox-group {
+    margin: 24px 0;
+}
+
+.checkbox-label {
+    display: block;
+    padding: 16px;
+    margin-bottom: 12px;
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    cursor: not-allowed;
+    transition: background-color 0.2s;
+}
+
+.checkbox-label input[type="checkbox"] {
+    margin-right: 12px;
+    cursor: not-allowed;
+}
+
+.checkbox-label span {
+    font-size: 1em;
+    color: #495057;
+    font-weight: 500;
+}
+
+/* Footer */
+footer {
+    margin-top: 60px;
+    padding: 40px 20px 20px;
+    border-top: 1px solid #dee2e6;
+    text-align: center;
+}
+
+footer p {
+    color: #6c757d;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+footer a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    header {
+        padding: 30px 10px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    .terms-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .term-card {
+        padding: 24px 20px;
+    }
+
+    .terms-content {
+        padding: 10px;
+    }
+
+    .terms-content h2 {
+        font-size: 1.4em;
+    }
+
+    .terms-content h3 {
+        font-size: 1.15em;
+    }
+
+    .consent-box {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.6em;
+    }
+
+    .term-card h2 {
+        font-size: 1.3em;
+    }
+
+    .terms-content h2 {
+        font-size: 1.3em;
+    }
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background-color: #ffffff;
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .breadcrumb,
+    footer a {
+        display: none;
+    }
+
+    .term-card {
+        break-inside: avoid;
+    }
+
+    .terms-content section {
+        break-inside: avoid;
+    }
+}
